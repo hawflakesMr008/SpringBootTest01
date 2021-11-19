@@ -1,0 +1,69 @@
+表 13.1：Spring Boot 应用启动器
+
+名称（Name）						描述（Description）					Pom
+spring-boot-starter					核心启动器，包括自动配置支持、日志和YAML
+spring-boot-starter-activiemq				使用 Apache ActiveMQ 的 JMS 消息启动器
+spring-boot-starter-amqp				使用 Spring AMQP 和 Rabbit MQ 的启动器
+spring-boot-starter-aop					使用 Spring AOP 和 AspectJ 进行面向方面编程的启动器
+spring-boot-starter-artemis				使用 Apache Artemis 的 JMS 消息启动器
+spring-boot-starter-batch				使用 Spring Batch 的启动器
+spring-boot-starter-cache				使用 Spring 框架的缓存支持的启动器
+spring-boot-starter-cloud-connectors			使用 Spring 云连接器的启动器，这个连接器简化了与云平台中的服务的连接。
+spring-boot-starter-data-cassandra			使用 Cassandra 分布式数据库和 Spring Data Cassandra 的启动器
+spring-boot-starter-data-cassandra-reactive		使用 Cassandra 分布式数据库和 Spring Data Cassandra Reactive 的启动器
+spring-boot-starter-data-couchbase			使用 Couchbase 面向文档数据库和 Spring Data Couchbase 的启动器
+spring-boot-starter-data-couchbase-reactive		使用 Couchbase 面向文档数据库和 Spring Data Couchbase Reactive 的启动器
+spring-boot-starter-data-elasticsearch			使用 Elasticsearch 搜索分析引擎和 Spring Data Elasticsearch 的启动器
+spring-boot-starter-data-jdbc				使用 Spring Data JDBC 的启动器
+spring-boot-starter-data-jpa				在 Hibernate 中使用 Spring Data JPA 的启动器
+spring-boot-starter-data-ldap				使用 Spring Data LDAP 的启动器
+spring-boot-starter-data-mongodb			使用 MongoDB 面向文档数据库和 Spring Data MongoDB 的启动器
+spring-boot-starter-data-mongodb-reactive		使用 MongoDB 面向文档数据库和 Spring Data MongoDB Reactive 的启动器
+spring-boot-starter-data-neo4j				使用 Neo4j 图数据库和 Spring Data Neo4j 的启动器
+spring-boot-starter-data-redis				使用Spring Data Redis 的 Redis 键值存储和 Lettuce 客户端的启动器
+spring-boot-starter-data-redis-reactive			使用Spring Data Redis Reactive 的 Redis 键值存储和 Lettuce 客户端的启动器
+spring-boot-starter-data-rest				使用 Spring Data REST 在 REST 之上公开 Spring Data 存储库的启动器
+spring-boot-starter-data-solr				在 Spring Data Solr 中使用 Apache Solr 搜索平台的启动器
+spring-boot-starter-freemarker				使用 FreeMarker 视图构建 MVC web 应用的启动器
+spring-boot-starter-groovy-templates			使用 Groovy 模板视图构建 MVC web 应用的启动器
+spring-boot-starter-hateoas				用 Spring MVC 和 Spring HATEOAS 构建基于超媒体的 RESTful web 应用的启动器
+spring-boot-starter-integration				使用 Spring 集成的启动器
+spring-boot-starter-jdbc				在 HikariCP 连接池中使用 JDBC 的启动器
+spring-boot-starter-jersey				使用 JAX-RS 和 Jersey 构建 RESTful web 应用的启动器。它是 spring-boot-starter-web 的替代品。
+spring-boot-starter-jooq				使用 jOOQ 访问 SQL 数据库的启动器。它是spring-boot-starter-data-jpa 或 spring-boot-starter-jdbc 的替代品。
+spring-boot-starter-json				json 读写的启动器
+spring-boot-starter-jta-atomikos			使用 Atomikos 的 JTA 事务启动器
+spring-boot-starter-jta-bitronix			使用 Bitronix 的 JTA 事务启动器
+spring-boot-starter-mail				使用 Java Mail 和 Spring 框架的邮件发送支持的启动器
+spring-boot-starter-mustache				使用 Mustache 视图构建 web 应用的启动器
+spring-boot-starter-oauth2-client			使用 Spring Security 的 OAuth2/OpenID Connect 客户端特性的启动器
+spring-boot-starter-oauth2-resource-server		使用 Spring Security 的 OAuth2 资源服务特性的启动器
+spring-boot-starter-quartz				使用 Quartz 调度器的启动器
+spring-boot-starter-security				使用 Spring Security 的启动器
+spring-boot-starter-test				用包括 JUnit、Hamcrest 和 Mockito 等的库测试 Spring Boot 应用的启动器
+spring-boot-starter-thymeleaf				使用 Thymeleaf 视图构建 MVC web 应用的启动器
+spring-boot-starter-validation				在 Hibernate 校验器中使用 Java Bean 校验的启动器
+spring-boot-starter-web					使用 Spring MVC 构建 web 应用（包括 RESTful）的启动器。将 Tomcat 用作默认的内嵌容器。
+spring-boot-starter-web-services			使用 Spring Web 服务的启动器
+spring-boot-starter-webflux				使用 Spring 框架的反应式 Web 支持构建 WebFlux 应用的启动器
+spring-boot-starter-websocket				使用 Spring 框架的 WebSocket 支持构建 WebSocket 应用的启动器
+
+
+表 13.2：Spring Boot 生产启动器
+名称（Name）						描述（Description）					Pom
+spring-boot-starter-actuator				使用 Spring Boot 的 Actuator 的启动器。这个 Actuator 提供了生产就绪功能，以帮助你监控和管理应用。
+
+
+表13.3：Spring Boot 技术启动器
+名称（Name）						描述（Description）					Pom
+spring-boot-starter-jetty				使用 Jetty 作为内嵌的 servlet 容器的启动器。它是 spring-boot-starter-tomcat 的替代者。
+spring-boot-starter-log4j2				使用 Log4j2 记录日志的启动器。它是 spring-boot-starter-logging 的替代者。
+spring-boot-starter-logging				使用 Logback 记录日志的启动器。它是默认的日志启动器。
+spring-boot-starter-reactor-netty			使用 Reactor Netty 作为内嵌的反应式 HTTP 服务的启动器。
+spring-boot-starter-tomcat				使用 Tomcat 作为内嵌的 servlet 容器的启动器。它是 spring-boot-starter-web 使用的默认 servlet 容器启动器。
+spring-boot-starter-undertow				使用 Undertom 作为内嵌的 servlet 容器的启动器。它是 spring-boot-starter-tomcat 的替代者。
+
+
+提示：有关其他的社区贡献的启动器的列表，请查看 GitHub 上的在 spring-boot-starters 模块中的 README 文件。
+
+https://github.com/spring-projects/spring-boot/tree/main/spring-boot-project/spring-boot-starters#readme

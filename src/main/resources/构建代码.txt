@@ -1,0 +1,20 @@
+启动类应该放置
+
+提示：我们建议你遵循 Java 推荐的包命名约定，并使用反向域名（例如：com.example.project）。
+
+com
+ +- example
+     +- myapplication
+         +- Application.java
+         |
+         +- customer
+         |   +- Customer.java
+         |   +- CustomerController.java
+         |   +- CustomerService.java
+         |   +- CustomerRepository.java
+         |
+         +- order
+             +- Order.java
+             +- OrderController.java
+             +- OrderService.java
+             +- OrderRepository.java

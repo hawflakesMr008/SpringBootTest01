@@ -1,0 +1,24 @@
+23.2、自定义 Banner
+可以通过将 banner.txt 文件添加到类路径或将 spring.banner.location 属性设置为此类文件的位置来更改在启动时打印的 banner（横幅）。如果文件的编码不是 UTF-8，则可以设置 spring.banner.charset。除了文本文件，还可以将 banner.gif、banner.jpg 或 banner.png 图像文件添加到类路径中，或设置 spring.banner.image.location 属性。图像被转换成 ASCII 艺术表现形式并打印在任何文本横幅的上方。
+
+在 banner.txt 文件中，可以使用以下任何占位符：
+
+表 23.1：Banner 变量
+
+变量（Variable）	描述（Description）
+${application.version}	在 MANIFEST.MF 中声明的应用的版本号，例如，Implementation-Version：1.0 被打印为 1.0。
+${application.formatted-version}	应用程序的版本号，在 MANIFEST.MF 中声明并格式化以供显示（用括号括起来，前缀为 v）。例如（v1.0）。
+${spring-boot.version}	正在使用的 Spring Boot 版本。例如：2.1.6.RELEASE。
+${spring-boot.formated-version}	正在使用的 Spring Boot 版本，格式化以供显示（用括号括起来，前缀为v）。例如：2.1.6.RELEASE。
+${Ansi.NAME}（或 ${AnsiColor.NAME}、${AnsiBackground.NAME}、${AnsiStyle.NAME}）	其中 NAME 是 ANSI 转义代码的名称。有关详细信息，请参见 AnsiPropertySource。
+${application.title}	在 MANIFEST.MF 中声明的应用标题。例如，Implementation-Title：MyApp 打印为 MyApp。
+提示：如果要以编程方式生成横幅，则可以使用 SpringApplication.setBanner(...) 方法。使用 org.springframework.boot.Banner 接口冰实现你自己的 printBanner() 方法。
+你还可以使用 spring.main.banner-mode 属性来确定是否必须在 System.out（控制台）上打印横幅，发送到配置的记录器（日志）或根本不生成横幅（关闭）。
+
+打印出来的 banner 被注册为一个单例 bean，名称如下：springBootBanner。
+
+注释：YAML 将 off 映射为 false，因此在想禁用应用中的 banner 时确保添加引号，如下面示例所示：
+
+spring:
+    main:
+        banner-mode: "off"
